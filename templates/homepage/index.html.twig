@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomepageController!{% endblock %}
+
+{% block header %}
+    <h1>Exercises</h1>
+{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <ol>
+        <li>Agregar un campo de recojo de imagen para la entidad "Person"</li>
+        <li>Construir un WebService que retorne una representación serializada de todas las entidades "Person" registradas</li>
+        <li>
+            Validación del formulario de "Person" con las siguientes características:
+            <ol>
+                <li>
+                    <em>names, lastnames:</em>
+                    Solo se debe contener letras y espacios
+                </li>
+                <li>
+                    <em>email:</em>
+                    Debe ser un email valido
+                </li>
+                <li>
+                    <em>iamgen del primer ejercicio:</em>
+                    Solo debe recibir imágenes y con un tamaño máximo de 1MB
+                </li>
+            </ol>
+        </li>
+    </ol>
+</div>
+{% endblock %}
